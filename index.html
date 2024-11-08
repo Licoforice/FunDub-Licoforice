@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunDub Licoforice - Озвучка и Дубляж</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="logo-container">
+            <h1>FunDub Licoforice</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li class="dropdown">
+                    <a href="#projects">Проекты</a>
+                    <div class="dropdown-content">
+                        <a href="#anime">Аниме</a>
+                        <a href="#games">Игры</a>
+                        <a href="#films">Фильмы</a>
+                    </div>
+                </li>
+                <li><a href="#watch">Смотреть аниме</a></li>
+                <li><a href="#socials">Соцсети</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главный раздел -->
+    <section id="home" class="welcome">
+        <h2>Приветствуем вас на официальном сайте команды Licoforice!</h2>
+        <p>Мы — энтузиасты озвучки, объединенные общей страстью к уникальным созданиям голосов и атмосферы. Будь то анимация или игры, наша цель — оживить для вас все фильмы истории. Присоединяйтесь к окружающему миру звуку!</p>
+    </section>
+
+    <!-- Фильтрация проектов -->
+    <section id="filter" class="filter-bar">
+        <input type="text" placeholder="Поиск по проектам..." id="search">
+        <button onclick="filterProjects('anime')">Аниме</button>
+        <button onclick="filterProjects('games')">Игры</button>
+        <button onclick="filterProjects('films')">Фильмы</button>
+    </section>
+
+    <!-- Раздел с проектами -->
+    <section id="projects" class="project-list">
+        <h2>Наши работы</h2>
+        <div class="project-card" data-category="anime">
+            <img src="project1.jpg" alt="Название проекта">
+            <div class="card-content">
+                <h3>Название проекта</h3>
+                <p>Описание проекта с акцентом на озвучку и дубляж.</p>
+            </div>
+        </div>
+        <div class="project-card" data-category="games">
+            <img src="project2.jpg" alt="Название проекта">
+            <div class="card-content">
+                <h3>Название проекта</h3>
+                <p>Описание проекта с акцентом на озвучку и дубляж.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Видеораздел -->
+    <section id="watch" class="video-gallery">
+        <h2>Наши видео на YouTube</h2>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0EbWrAvt3Gw" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Социальные сети -->
+    <section id="socials" class="social-media">
+        <h2>Наши соцсети</h2>
+        <div class="social-links">
+            <a href="https://t.me/Licoforice" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
+            <a href="https://youtube.com/@licoforice" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="https://vk.com/licoforicedub" target="_blank"><i class="fab fa-vk"></i> VK</a>
+            <a href="https://www.tiktok.com/@licoforice_dub" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Licoforice &copy; 2024. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
